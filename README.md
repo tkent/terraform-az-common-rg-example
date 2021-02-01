@@ -37,13 +37,13 @@ module "common_rg" {
   environment. No provider information provided through variables.
 * No `provider` block is defined, allowing it to be embedded within other modules
   that define specific state backends.
-* `terragrunt` is used for manual tests
+* `terragrunt` is used for manual tests.
 
 ## Development 
 
 * Terraform's `fmt` command is used as style guidance.
 * `tfenv` should be installed locally to ensure a consistent terraform
-  versio
+  version
 * golang `1.3` is required for terratest
 * Test against terraform `0.12.0`
 
@@ -61,9 +61,9 @@ There are three types of testing that are performed in this project.
 
 ### Why bother with this module? Resource Groups are simple!
 
-That's right! However, the tags on resource groups may need to be tightly
+That's certainly right. However, the tags on resource groups may need to be tightly
 controlled depending on the policies defined for an organization. This provides
-and example of how somebody could...
+an example of how somebody could:
 
 1. Control the minimum set of tags associated with a resource group in a module.
    Avoiding "I didn't know I needed _that_ tag" problem.
@@ -84,4 +84,4 @@ but can get [very ugly](https://www.terraform.io/docs/language/values/variables.
 in use cases outside of simple pattern matching.
 
 A combination of a `try` and some fancy interpolation would make this possible,
-but I wouldn't recommend it until there are easier-to-use langauge features.
+but I wouldn't recommend it until there are easier-to-use language features.
