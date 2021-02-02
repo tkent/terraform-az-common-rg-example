@@ -7,7 +7,7 @@ help: Makefile
 	@sed -n 's/^##//p' $< | column -t -s ':' | sed -e 's/^/ /'
 	@echo
 
-.PHONY: lint
+.PHONY: fmt
 ## fmt: Performs a terraform fmt
 fmt:
 	terraform fmt -diff -check .

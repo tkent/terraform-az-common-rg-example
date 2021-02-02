@@ -45,7 +45,7 @@ module "common_rg" {
 * `tfenv` should be installed locally to ensure a consistent terraform
   version
 * golang `1.3` is required for terratest
-* Test against terraform `0.12.0`
+* Test against terraform `0.12.20`
 
 ### Testing
 
